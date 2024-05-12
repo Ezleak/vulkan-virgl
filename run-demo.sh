@@ -86,7 +86,7 @@ function build_mesa()
         meson setup mesa mesa/build         \
             -Dvulkan-drivers=virgl          \
             -Dgallium-drivers=virgl         \
-            -Dbuildtype=debug               \
+            -Dbuildtype=release               \
             -Dglx=disabled                  \
             -Dprefix=$(realpath mesa/build)
     fi
